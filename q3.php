@@ -16,39 +16,43 @@
     <section class="sec1">
         <div class="container">
             <div class="row">
-                <div class="text-center col-md-offset-4 col-md-6 ">
-                    <div class="header">
-                        <h4>
+            <div class="header text-center">
+                    <h4>
                             Hello, who's this?
                         </h4>
                     </div>
+                <div class="d-flexs">
+                    
                     <form action="insert.php" method="post">
                     
-                        <div class="mb-3 row">
-                            <label for="names" class="col-sm-2 col-form-label">First Name</label>
-                            <br />
+                        <div class="mb-3 d-flex-col row">
+                            <label for="names" class="  col-form-label">First Name</label>
+                           
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="fname"  placeholder="First Name">
+                                <input type="text" class="form-control" name="fname" required placeholder="First Name">
                             </div>
                         </div>
                         <div class="mb-3 row">
-                            <label for="lnames" class="col-sm-2 col-form-label">Last Name</label>
-                            <br />
+                            <label for="lnames" class=" col-form-label">Last Name</label>
+                       
 
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="lname" placeholder="Last Name">
+                                <input type="text" class="form-control" name="lname" required placeholder="Last Name">
                             </div>
                         </div>
                         <div class="mb-3 row">
-                            <label for="phone" class="col-sm-2 col-form-label">Mobile Number</label>
-                            <br />
+                            <label for="phone" class="  col-form-label ">Mobile Number</label>
+                           
 
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="phone" placeholder="Mobile Number">
+                                <input type="text" class="form-control" name="phone" required placeholder="Mobile Number">
                             </div>
-                            <button type="submit" onclick="executeExample('sweetAlert')" name="submit">Submit</button>
-                            <script> Swal.fire('Any fool can use a computer')</script>
-                        </div>
+                            </div>
+                            <div class="mb-3 row">
+                            <div class="col-sm-10">
+                            <button type="submit" class="btn-blacks" onclick="executeExample('sweetAlert')" name="submit">Submit</button>
+                            </div>
+                            </div>
                     </form>
                 </div>
             </div>
@@ -63,7 +67,7 @@
 
     <script>
         function executeExample(){
-            swal("Good job!", "You clicked the button!", "success");
+            swal("Good job!", "Thanks For Your Time", " Your info saved, success");
         }
       
         </script>
